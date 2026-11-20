@@ -40,22 +40,22 @@ Extract the password hash of a protected PDF and recover its password using **Jo
 **Step 1 — Extract PDF Hash**
 Uploaded the protected PDF to the Online HashCrack PDF Hash Extractor and generated its password hash in `$pdf$...` format.
 
-![Hash Extraction](PM1/Hash-Extract.png)
+![Hash Extraction](Screenshot/PM1/Hash-Extract.png)
 
 **Step 2 — Configure Johnny**
 Opened Johnny, pointed it to the John the Ripper executable, and loaded the hash file via **Open Password File**.
 
-![Johnny Configuration](PM1/JTR-PM1-Setup.png)
+![Johnny Configuration](Screenshot/PM1/JTR-PM1-Setup.png)
 
 **Step 3 — Perform Password Cracking**
 Started the cracking process in Johnny. The tool successfully recovered the password.
 
-![JTR Password Cracking Result](PM1/JTR-PM1.png)
+![JTR Password Cracking Result](Screenshot/PM1/JTR-PM1.png)
 
 **Step 4 — Verify the Password**
 Opened the protected PDF with the recovered password to confirm success.
 
-![Unlocked PDF](PM1/W3-PM1-file-unlocked.png)
+![Unlocked PDF](Screenshot/PM1/W3-PM1-file-unlocked.png)
 
 ### ✅ PM1 Result
 Successfully recovered and verified the PDF password: **`good-luck`**
@@ -78,17 +78,17 @@ Recover the password of the same protected PDF using Networkwalks' browser-based
 **Step 1 — Generate PDF Hash**
 Uploaded the protected PDF to the Networkwalks Hash Calculator, which extracted the password hash in `$pdf$...` format.
 
-![Hash Calculator](PM2/Hash-Calculator.png)
+![Hash Calculator](Screenshot/PM2/Hash-Calculator.png)
 
 **Step 2 — Perform Dictionary Attack**
 Pasted the hash into the Networkwalks Password Cracker, selected the dictionary attack method, and ran the crack.
 
-![Password Cracker Result](PM2/Cracked.png)
+![Password Cracker Result](Screenshot/PM2/Cracked.png)
 
 **Step 3 — Verify the Password**
 Used the recovered password to open and confirm the unlocked PDF.
 
-![Unlocked PDF](PM2/W3-PM2-File-Unlocked.png)
+ 
 
 ### ✅ PM2 Result
 Successfully recovered and verified the PDF password: **`password1`**
@@ -128,17 +128,17 @@ Weak, predictable passwords can be recovered quickly with publicly available cra
 
 ```
 .
-├── PM1/
-│   ├── .gitkeep
-│   ├── Hash-Extract.png
-│   ├── JTR-PM1-Setup.png
-│   ├── JTR-PM1.png
-│   └── W3-PM1-file-unlocked.png
-├── PM2/
-│   ├── .gitkeep
-│   ├── Cracked.png
-│   ├── Hash-Calculator.png
-│   └── W3-PM2-File-Unlocked.png
+  ├── PM1/
+  │   ├── .gitkeep
+  │   ├── Hash-Extract.png
+  │   ├── JTR-PM1-Setup.png
+  │   ├── JTR-PM1.png
+  │   └── W3-PM1-file-unlocked.png
+  ├── PM2/
+  │   ├── .gitkeep
+  │   ├── Cracked.png
+  │   ├── Hash-Calculator.png
+  │   └── W3-PM2-File-Unlocked.png
 └── README.md
 ```
 
