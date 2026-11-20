@@ -93,6 +93,7 @@ Used the recovered password to open and confirm the unlocked PDF.
 ### ✅ PM2 Result
 Successfully recovered and verified the PDF password: **`password1`**
 
+![Unlocked PDF](Screenshot/PM2/W3-PM2-File-Unlocked.png)
 ---
 
 ## 📊 Comparison: PM1 vs PM2
